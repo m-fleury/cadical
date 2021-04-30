@@ -1,6 +1,12 @@
 language: cpp
 dist: bionic
 osx_image: xcode10.2
+before_install:
+- |-
+    case $TRAVIS_OS_NAME in
+      windows)
+        choco install -y make
+    esac
 compiler:
 - gcc
 - clang
