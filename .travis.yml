@@ -5,7 +5,7 @@ before_install:
 - |-
     case $TRAVIS_OS_NAME in
       windows)
-        choco install -y make
+        choco install -y make mingw
     esac
 compiler:
 - gcc
