@@ -172,13 +172,6 @@ do
   shift
 done
 
-
-#--------------------------------------------------------------------------#
-# to support %z and co in printf
-if [[ $(uname -s) == MSYS_NT* ]];then
-  CXXFLAGS = "$CXXFLAGS -D__USE_MINGW_ANSI_STDIO=1"
-fi
-echo "$(uname -s)"
 #--------------------------------------------------------------------------#
 
 if [ $quiet = yes ]
