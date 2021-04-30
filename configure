@@ -178,7 +178,7 @@ done
 if [[ $(uname -s) == CYGWIN* ]];then
   CXXFLAGS += "-D__USE_MINGW_ANSI_STDIO=1"
 fi
-
+echo "$(uname -s)"
 #--------------------------------------------------------------------------#
 
 if [ $quiet = yes ]
